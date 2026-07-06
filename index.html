@@ -3,26 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <style type="text/tailwindcss">
+      @theme {
+          --color-beige: #F5F1E8;
+          --color-darkgreen: #4F7942;
+          --color-lightgreen: #A3B18A;
+          --color-charcoal: #2F2F2F;
+          --color-teal: #2E4B43;
+      }
+     </style>
     <title>My Website</title>
   </head>
   <body>
-    <header>
-      <!-- Elisa start header  -->
-      <div>WanderWise</div>
+     <!-- Elisa start header  --> 
+      <header class="bg-(--color-teal) flex justify-between items-center pt-4 pb-4 pr-4 pl-8 text-(--color-beige) gap-4" >
+      <div class="text-3xl font-bold" >WanderWise</div>
       <nav>
-        <ul>
-          <li><a href="#homepage-section">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+        <ul class="flex gap-6">
+          <li class="hover:text-(--color-lightgreen)"><a href="#homepage-section">Home</a></li>
+          <li class="hover:text-(--color-lightgreen)"><a href="#features">Features</a></li>
+          <li class="hover:text-(--color-lightgreen)"><a href="#pricing">Pricing</a></li>
         </ul>
       </nav>
-      <button>Try For Free</button>
+      <button class="bg-(--color-darkgreen) px-6 py-3 rounded-lg hover:bg-(--color-lightgreen) hover:text-(--color-darkgreen)">Try For Free</button>
     </header>
     <!-- Elisa end header   -->
     <main>
-      <!-- Sowjanya hompage-section- start-->
-      <section>
-        <!-- Sowjanya -->
+      <!-- Elisa hompage-section- start-->
+      <section id="hompage-section">
         <div>
           <div>#1 Adventure App of 2026</div>
           <div><h2>Escape the ordinary</h2></div>
@@ -41,7 +50,7 @@
           <div>Continue..</div>
         </div>
       </section>
-
+      <!-- Elisa hompage-section- end-->
       <!-- Elisa trusted by section start-->
       <section>
         <h4>Trusted by companies like</h4>
@@ -83,7 +92,7 @@
       <!-- Elisa video section end-->
 
       <!-- Sowjanya feature-section start-->
-      <section>
+      <section id="features">
         <!-- Sowjanya -->
 
         <div>
@@ -177,7 +186,7 @@
       </section>
 
       <!-- Arwa price-section start-->
-      <section>
+      <section id="pricing">
         <!-- Sowjanya -->
         <div>
           <h2>Get awesome features, without extra charges!</h2>
