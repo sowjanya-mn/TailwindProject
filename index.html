@@ -3,30 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+=======
          <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      <style type="text/tailwindcss">
+>>>>>>> dev
       @theme {
-          --color-beige: #F5F1E8;
-          --color-darkgreen: #4F7942;
-          --color-lightgreen: #A3B18A;
-          --color-charcoal: #2F2F2F;
-          --color-teal: #2E4B43;
+        --color-beige: #f5f1e8;
+        --color-darkgreen: #4f7942;
+        --color-lightgreen: #a3b18a;
+        --color-charcoal: #2f2f2f;
+        --color-teal: #2e4b43;
       }
-     </style>
+    </style>
     <title>My Website</title>
   </head>
   <body>
-     <!-- Elisa start header  --> 
-      <header class="bg-(--color-teal) flex justify-between items-center pt-4 pb-4 pr-4 pl-8 text-(--color-beige) gap-4" >
-      <div class="text-3xl font-bold" >WanderWise</div>
+    <!-- Elisa start header  -->
+    <header
+      class="bg-(--color-teal) flex justify-between items-center pt-4 pb-4 pr-4 pl-8 text-(--color-beige) gap-4"
+    >
+      <div class="text-3xl font-bold">WanderWise</div>
       <nav>
         <ul class="flex gap-6">
-          <li class="hover:text-(--color-lightgreen)"><a href="#homepage-section">Home</a></li>
-          <li class="hover:text-(--color-lightgreen)"><a href="#features">Features</a></li>
-          <li class="hover:text-(--color-lightgreen)"><a href="#pricing">Pricing</a></li>
+          <li class="hover:text-(--color-lightgreen)">
+            <a href="#homepage-section">Home</a>
+          </li>
+          <li class="hover:text-(--color-lightgreen)">
+            <a href="#features">Features</a>
+          </li>
+          <li class="hover:text-(--color-lightgreen)">
+            <a href="#pricing">Pricing</a>
+          </li>
         </ul>
       </nav>
-      <button class="bg-(--color-darkgreen) px-6 py-3 rounded-lg hover:bg-(--color-lightgreen) hover:text-(--color-darkgreen)">Try For Free</button>
+      <button
+        class="bg-(--color-darkgreen) px-6 py-3 rounded-lg hover:bg-(--color-lightgreen) hover:text-(--color-darkgreen)"
+      >
+        Try For Free
+      </button>
     </header>
     <!-- Elisa end header   -->
     <main>
@@ -78,18 +95,21 @@
         </div>
       </section>
       <!-- Elisa trusted by section end-->
-      <!-- Elisa video section start-->
-      <section>
-        <h3>Check out our Video:</h3>
+      <!-- Sowjanya video section start-->
+      <section class="bg-(--color-teal) p-6 text-center">
+        <h3 class="m-1 text-(--color-beige) text-xl font-bold">
+          Check out our Video:
+        </h3>
         <video
           src="https://www.pexels.com/download/video/7815662/"
           autoplay
           muted
           loop
           playsinline
+          class="w-[70%] h-auto inline-block rounded-[5%]"
         ></video>
       </section>
-      <!-- Elisa video section end-->
+      <!-- Sowjanya video section end-->
 
       <!-- Sowjanya feature-section start-->
       <section id="features">
