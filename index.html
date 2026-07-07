@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     <style type="text/tailwindcss">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
       @theme {
         --color-beige: #f5f1e8;
         --color-darkgreen: #4f7942;
@@ -74,8 +74,10 @@
       </section>
       <!-- Elisa homepage-section- end-->
       <!-- Elisa trusted by section start-->
-      <section class="bg-(--color-beige) ">
-        <h4 class="text-(--color-teal) text-lg font-bold text-center pt-6">Trusted by companies like</h4>
+      <section class="bg-(--color-beige)">
+        <h4 class="text-(--color-teal) text-lg font-bold text-center pt-6">
+          Trusted by companies like
+        </h4>
         <div class="grid grid-cols-5 items-center gap-12 px-12 pb-6">
           <img
             src="https://cdn.brandfetch.io/idGE3xbU8n/w/800/h/145/theme/dark/id35uZaG4A.png?c=1dxbfHSJFAPEGdCLU4o5B"
@@ -109,7 +111,6 @@
           src="https://www.pexels.com/download/video/7815662/"
           autoplay
           muted
-          loop
           playsinline
           class="w-[70%] h-auto inline-block rounded-[5%]"
         ></video>
@@ -117,43 +118,50 @@
       <!-- Sowjanya video section end-->
 
       <!-- Sowjanya feature-section start-->
-      <section id="features">
-        <!-- Sowjanya -->
-
+      <section
+        class="bg-(--color-lightgreen) flex flex-col items-center bg-secondary p-12 font-sans text-center h-auto"
+        id="features"
+      >
         <div>
-          <h2>Awesome app features</h2>
-          <p>Discover the power of our app with these amazing features.</p>
+          <h2 class="text-3xl font-bold text-center p-2">
+            Awesome app features
+          </h2>
+          <p class="text-center">
+            Discover the power of our app with these amazing features.
+          </p>
         </div>
-        <div>
-          <div>
-            <div>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUrxar8wN2TFKtP-06QGALnIKFK_GsqMThz2pBrjntvw&s=10"
-                alt="Explorenearby"
-              />
-            </div>
+        <div
+          class="flex flex-row justify-center gap-[8%] w-full max-w-[1100px]"
+        >
+          <div class="flex flex-col items-center flex-[0_1_25%]">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUrxar8wN2TFKtP-06QGALnIKFK_GsqMThz2pBrjntvw&s=10"
+              alt="Explorenearby"
+              class="w-[120px] h-[120px] rounded-full mt-[30px] mb-[25px] object-cover"
+            />
+
             <h3>Explore nearby</h3>
             <p>Discover hidden spots and trails close to you</p>
           </div>
 
-          <div>
-            <div>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHnQfON7S3Uyzpv242sKcHeFhoUyh4qHe5Xd0uYSUChg&s=10"
-                alt="SaveBookmark"
-              />
-            </div>
+          <div class="flex flex-col items-center flex-[0_1_25%]">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHnQfON7S3Uyzpv242sKcHeFhoUyh4qHe5Xd0uYSUChg&s=10"
+              alt="SaveBookmark"
+              class="w-[120px] h-[120px] rounded-full mt-[30px] mb-[25px] object-cover"
+            />
+
             <h3>Save & Bookmark</h3>
             <p>Build your own list of favorite places to visit</p>
           </div>
 
-          <div>
-            <div>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9LIV-BwR5pIqgkSOwuMJIMLt7k2zD9ojiuEjNo5dCrQ&s"
-                alt="Tripplanning"
-              />
-            </div>
+          <div class="flex flex-col items-center flex-[0_1_25%]">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9LIV-BwR5pIqgkSOwuMJIMLt7k2zD9ojiuEjNo5dCrQ&s"
+              alt="Tripplanning"
+              class="w-[120px] h-[120px] rounded-full mt-[30px] mb-[25px] object-cover"
+            />
+
             <h3>Trip Planning</h3>
             <p>
               Put together simple day-trip itineraries based on your availabilty
@@ -163,94 +171,161 @@
       </section>
 
       <!-- Sowjanya choose-section start-->
-      <section>
+      <section
+        class="bg-(--color-beige) flex justify-center justify-items-center text-center"
+      >
         <!-- Sowjanya -->
         <div>
           <div>
-            <h2>Why Choose Our App?</h2>
+            <h2 class="text-2xl font-bold text-center p-8">
+              Why Choose Our App?
+            </h2>
           </div>
-          <div>
+          <div
+            class="grid grid-cols-[repeat(3,minmax(150px,250px))] grid-rows-2 justify-around justify-items-around w-[65%] text-wrap p-[0.5em] mx-auto"
+          >
             <div>
               <div>
-                <h5>Offline Maps</h5>
+                <h5
+                  class="text-sm font-bold w-[120px] h-[120px] bg-[var(--color-lightgreen)] rounded-full mt-[30px] mb-[25px] flex flex-col items-center flex-[0_1_25%] leading-[6.5rem] text-wrap text-center"
+                >
+                  Offline Maps
+                </h5>
               </div>
-              <p>Access maps even without an internet connection</p>
+              <p class="text-[0.95rem] leading-[1.4] m-0 text-center">
+                Access maps even without an internet connection
+              </p>
             </div>
             <div>
               <div>
-                <h5>Weather Update</h5>
+                <h5
+                  class="text-sm font-bold w-[120px] h-[120px] bg-[var(--color-lightgreen)] rounded-full mt-[30px] mb-[25px] flex flex-col items-center flex-[0_1_25%] leading-[6.5rem] text-wrap text-center"
+                >
+                  Weather Update
+                </h5>
               </div>
-              <p>Get accurate weather updates for your trips</p>
+              <p class="text-[0.95rem] leading-[1.4] m-0 text-center">
+                Get accurate weather updates for your trips
+              </p>
             </div>
             <div>
               <div>
-                <h5>Reviews</h5>
+                <h5
+                  class="text-sm font-bold w-[120px] h-[120px] bg-[var(--color-lightgreen)] rounded-full mt-[30px] mb-[25px] flex flex-col items-center flex-[0_1_25%] leading-[6.5rem] text-wrap text-center"
+                >
+                  Reviews
+                </h5>
               </div>
-              <p>Read reviews and tips from fellow adventurers</p>
+              <p class="text-[0.95rem] leading-[1.4] m-0 text-center">
+                Read reviews and tips from fellow adventurers
+              </p>
             </div>
             <div>
               <div>
-                <h5>Safety Alerts</h5>
+                <h5
+                  class="text-sm font-bold w-[120px] h-[120px] bg-[var(--color-lightgreen)] rounded-full mt-[30px] mb-[25px] flex flex-col items-center flex-[0_1_25%] leading-[6.5rem] text-wrap text-center"
+                >
+                  Safety Alerts
+                </h5>
               </div>
-              <p>Receive alerts about potential hazards</p>
+              <p class="text-[0.95rem] leading-[1.4] m-0 text-center">
+                Receive alerts about potential hazards
+              </p>
             </div>
             <div>
               <div>
-                <h5>Quick Contacts</h5>
+                <h5
+                  class="text-sm font-bold w-[120px] h-[120px] bg-[var(--color-lightgreen)] rounded-full mt-[30px] mb-[25px] flex flex-col items-center flex-[0_1_25%] leading-[6.5rem] text-wrap text-center"
+                >
+                  Quick Contacts
+                </h5>
               </div>
-              <p>Quickly reach out to emergency services</p>
+              <p class="text-[0.95rem] leading-[1.4] m-0 text-center">
+                Quickly reach out to emergency services
+              </p>
             </div>
             <div>
               <div>
-                <h5>Helpful Resources</h5>
+                <h5
+                  class="text-sm font-bold w-[120px] h-[120px] bg-[var(--color-lightgreen)] rounded-full mt-[30px] mb-[25px] flex flex-col items-center flex-[0_1_25%] leading-[6.5rem] text-wrap text-center"
+                >
+                  Helpful Resources
+                </h5>
               </div>
-              <p>Find useful information for your adventures</p>
+              <p class="text-[0.95rem] leading-[1.4] m-0 text-center">
+                Find useful information for your adventures
+              </p>
             </div>
           </div>
         </div>
       </section>
       <!-- Arwa price-section start-->
-      <section id="pricing" class="bg-lightgreen px-6 py-12 text-charcoal md:py-16">
+      <section
+        id="pricing"
+        class="bg-lightgreen px-6 py-12 text-charcoal md:py-16"
+      >
         <div class="mx-auto max-w-7xl text-center">
           <h2 class="text-3xl font-bold leading-tight md:text-[34px]">
             Get awesome features, without extra charges!
           </h2>
 
-          <p class="mx-auto mt-16 max-w-5xl text-xl leading-relaxed md:text-2xl">
+          <p
+            class="mx-auto mt-16 max-w-5xl text-xl leading-relaxed md:text-2xl"
+          >
             Our app is packed with features that will enhance your adventure
             experience, all without any additional costs!
           </p>
 
-          <div class="mx-auto mt-10 grid max-w-6xl gap-10 md:grid-cols-3 md:gap-16">
-            <div class="flex min-h-[330px] flex-col rounded-md border border-white/70 bg-beige px-8 pb-12 pt-12 text-left shadow-sm">
+          <div
+            class="mx-auto mt-10 grid max-w-6xl gap-10 md:grid-cols-3 md:gap-16"
+          >
+            <div
+              class="flex min-h-[330px] flex-col rounded-md border border-white/70 bg-beige px-8 pb-12 pt-12 text-left shadow-sm"
+            >
               <h3 class="text-center text-2xl font-bold leading-none">0$</h3>
-              <ul class="mt-7 list-disc space-y-1 pl-5 text-2xl font-medium leading-tight">
+              <ul
+                class="mt-7 list-disc space-y-1 pl-5 text-2xl font-medium leading-tight"
+              >
                 <li>Unlimited access to basic features</li>
               </ul>
-              <button class="mx-auto mt-auto rounded-md bg-teal px-4 py-3 text-2xl font-bold leading-none text-beige transition hover:bg-darkgreen">
+              <button
+                class="mx-auto mt-auto rounded-md bg-teal px-4 py-3 text-2xl font-bold leading-none text-beige transition hover:bg-darkgreen"
+              >
                 Basic Features
               </button>
             </div>
 
-            <div class="flex min-h-[330px] flex-col rounded-md border border-white/70 bg-beige px-8 pb-12 pt-12 text-left shadow-sm">
+            <div
+              class="flex min-h-[330px] flex-col rounded-md border border-white/70 bg-beige px-8 pb-12 pt-12 text-left shadow-sm"
+            >
               <h3 class="text-center text-2xl font-bold leading-none">49$</h3>
-              <ul class="mt-7 list-disc space-y-1 pl-5 text-2xl font-medium leading-tight">
+              <ul
+                class="mt-7 list-disc space-y-1 pl-5 text-2xl font-medium leading-tight"
+              >
                 <li>All basic features</li>
                 <li>Advanced trip planning</li>
               </ul>
-              <button class="mx-auto mt-auto rounded-md bg-teal px-4 py-3 text-2xl font-bold leading-none text-beige transition hover:bg-darkgreen">
+              <button
+                class="mx-auto mt-auto rounded-md bg-teal px-4 py-3 text-2xl font-bold leading-none text-beige transition hover:bg-darkgreen"
+              >
                 Premium Features
               </button>
             </div>
 
-            <div class="flex min-h-[330px] flex-col rounded-md border border-white/70 bg-beige px-8 pb-12 pt-12 text-left shadow-sm">
+            <div
+              class="flex min-h-[330px] flex-col rounded-md border border-white/70 bg-beige px-8 pb-12 pt-12 text-left shadow-sm"
+            >
               <h3 class="text-center text-2xl font-bold leading-none">99$</h3>
-              <ul class="mt-7 list-disc space-y-1 pl-5 text-2xl font-medium leading-tight">
+              <ul
+                class="mt-7 list-disc space-y-1 pl-5 text-2xl font-medium leading-tight"
+              >
                 <li>All basic features</li>
                 <li>Advanced trip planning</li>
                 <li>Exclusive content</li>
               </ul>
-              <button class="mx-auto mt-auto rounded-md bg-teal px-4 py-3 text-2xl font-bold leading-none text-beige transition hover:bg-darkgreen">
+              <button
+                class="mx-auto mt-auto rounded-md bg-teal px-4 py-3 text-2xl font-bold leading-none text-beige transition hover:bg-darkgreen"
+              >
                 Ultimate Features
               </button>
             </div>
@@ -259,40 +334,72 @@
       </section>
     </main>
     <!-- Arwa footer start-->
-    <footer class="bg-(--color-teal) text-(--color-beige) text-center py-16 px-4">
+    <footer
+      class="bg-(--color-teal) text-(--color-beige) text-center py-16 px-4"
+    >
       <div class="text-3xl font-bold mb-6">WanderWise</div>
       <nav class="mb-10">
-  <ul class="flex justify-center gap-8 text-lg">
-    <li class="hover:text-(--color-lightgreen) transition-colors">
-      <a href="#homepage-section">Home</a>
-    </li>
-    <li class="hover:text-(--color-lightgreen) transition-colors">
-      <a href="#features">Features</a>
-    </li>
-    <li class="hover:text-(--color-lightgreen) transition-colors">
-      <a href="#pricing">Pricing</a>
-    </li>
-  </ul>
-</nav>
+        <ul class="flex justify-center gap-8 text-lg">
+          <li class="hover:text-(--color-lightgreen) transition-colors">
+            <a href="#homepage-section">Home</a>
+          </li>
+          <li class="hover:text-(--color-lightgreen) transition-colors">
+            <a href="#features">Features</a>
+          </li>
+          <li class="hover:text-(--color-lightgreen) transition-colors">
+            <a href="#pricing">Pricing</a>
+          </li>
+        </ul>
+      </nav>
       <div class="flex justify-center gap-5 mb-10">
-  <a href="https://facebook.com" target="_blank"
-     class="w-12 h-12 rounded-full bg-(--color-beige) flex items-center justify-center hover:opacity-80 transition-opacity">
-    <img src="https://cdn.brandfetch.io/idpKX136kp/w/2084/h/2084/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B" alt="Facebook" class="w-6 h-6" />
-  </a>
-  <a href="https://instagram.com" target="_blank"
-     class="w-12 h-12 rounded-full bg-(--color-beige) flex items-center justify-center hover:opacity-80 transition-opacity">
-    <img src="https://cdn.brandfetch.io/ido5G85nya/theme/light/id8qc6z_TX.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Instagram" class="w-6 h-6" />
-  </a>
-  <a href="https://youtube.com" target="_blank"
-     class="w-12 h-12 rounded-full bg-(--color-beige) flex items-center justify-center hover:opacity-80 transition-opacity">
-    <img src="https://cdn.brandfetch.io/idVfYwcuQz/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Youtube" class="w-6 h-6" />
-  </a>
-  <a href="https://linkedin.com" target="_blank"
-     class="w-12 h-12 rounded-full bg-(--color-beige) flex items-center justify-center hover:opacity-80 transition-opacity">
-    <img src="https://cdn.brandfetch.io/idJFz6sAsl/w/400/h/400/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B" alt="LinkedIn" class="w-6 h-6" />
-  </a>
-</div>
-      <p class="text-sm text-(--color-beige)/60">&copy; 2026 WanderWise. All rights reserved.</p>
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          class="w-12 h-12 rounded-full bg-(--color-beige) flex items-center justify-center hover:opacity-80 transition-opacity"
+        >
+          <img
+            src="https://cdn.brandfetch.io/idpKX136kp/w/2084/h/2084/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
+            alt="Facebook"
+            class="w-6 h-6"
+          />
+        </a>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          class="w-12 h-12 rounded-full bg-(--color-beige) flex items-center justify-center hover:opacity-80 transition-opacity"
+        >
+          <img
+            src="https://cdn.brandfetch.io/ido5G85nya/theme/light/id8qc6z_TX.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+            alt="Instagram"
+            class="w-6 h-6"
+          />
+        </a>
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          class="w-12 h-12 rounded-full bg-(--color-beige) flex items-center justify-center hover:opacity-80 transition-opacity"
+        >
+          <img
+            src="https://cdn.brandfetch.io/idVfYwcuQz/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+            alt="Youtube"
+            class="w-6 h-6"
+          />
+        </a>
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          class="w-12 h-12 rounded-full bg-(--color-beige) flex items-center justify-center hover:opacity-80 transition-opacity"
+        >
+          <img
+            src="https://cdn.brandfetch.io/idJFz6sAsl/w/400/h/400/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B"
+            alt="LinkedIn"
+            class="w-6 h-6"
+          />
+        </a>
+      </div>
+      <p class="text-sm text-(--color-beige)/60">
+        &copy; 2026 WanderWise. All rights reserved.
+      </p>
     </footer>
     <!-- Arwa footer end-->
   </body>
